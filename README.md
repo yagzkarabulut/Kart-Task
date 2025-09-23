@@ -1,6 +1,6 @@
-## Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
+# Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
 
-# Kapsam (özeti)
+## Kapsam (özeti)
 
 Ekranda bir kart ızgarası (ör: ürünler, karakterler, cihazlar…).
 
@@ -14,7 +14,7 @@ Basit filtre & sıralama (örn. kategori filtresi, rating’e göre azalan).
 
 İsteğe bağlı: JSON yükleyip kendi kart setini ekleyebilme (tamamen client-side).
 
-# Kabul Kriterleri
+## Kabul Kriterleri
 
 En fazla iki kart seçilebiliyor; üçüncü seçime izin verilmiyor (bilgilendirici Snackbar).
 
@@ -30,7 +30,7 @@ Filtre (kategori) ve sıralama (rating desc/asc) anında uygulanır.
 
 JSON yükleme (ops.): Şema geçmezse Zod hata listesi gösterilir, veri uygulanmaz.
 
-# Basit Akış
+## Basit Akış
 
 Kullanıcı kartlara bakar → iki tane seçer.
 

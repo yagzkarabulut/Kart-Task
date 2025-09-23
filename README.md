@@ -14,6 +14,18 @@ Basit filtre & sıralama (örn. kategori filtresi, rating’e göre azalan).
 
 İsteğe bağlı: JSON yükleyip kendi kart setini ekleyebilme (tamamen client-side).
 
+# Kullanılacak 4 Kütüphane (zorunlu)
+
+MUI (Material UI) – kurumsal UI bileşenleri (AppBar, Grid, Card, Select, Button, Snackbar).
+
+Zustand – global seçimler (seçili kartlar, metrik, filtreler) ve UI state.
+
+Framer Motion – kart hover/selection ve kazanan animasyonları (pulse, shake).
+
+Zod – dışarıdan yüklenecek JSON veri şemasını doğrulama (opsiyonel ama projeyi pürüzsüz kılar).
+
+Not: Her şey local state + statik/yerel JSON ile çalışacak; ağ çağrısı yok.
+
 ## Kabul Kriterleri
 
 En fazla iki kart seçilebiliyor; üçüncü seçime izin verilmiyor (bilgilendirici Snackbar).

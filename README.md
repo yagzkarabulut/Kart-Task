@@ -1,4 +1,7 @@
-![comp](https://github.com/user-attachments/assets/d243deba-50e4-4a53-8075-d1b9391e6caf)
+## GIF
+![comp2](https://github.com/user-attachments/assets/78d02495-5d24-4a50-a96f-c4353c5ef0ed)
+
+
  # Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
 
 ## Kapsam (özeti)

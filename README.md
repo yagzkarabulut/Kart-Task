@@ -1,4 +1,5 @@
-# Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
+![comp](https://github.com/user-attachments/assets/d243deba-50e4-4a53-8075-d1b9391e6caf)
+ # Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
 
 ## Kapsam (özeti)
 

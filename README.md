@@ -1,3 +1,7 @@
+## Preview
+
+![Preview](public/kart-task.gif)
+
 # Görev: “Card Comparator” — Kart Seç & Karşılaştır SPA
 
 ## Kapsam (özeti)

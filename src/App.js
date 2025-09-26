@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "@mui/material/Box";
+import HeaderBar from "./components/HeaderBar";
+import Container from "@mui/material/Container";
+import { AnimatePresence } from "framer-motion";
+import FilterPanel from "./components/FilterPanel";
+import JsonUploadPanel from "./components/JsonUploadPanel";
+import SelectionStatus from "./components/SelectionStatus";
+import CardsGrid from "./components/card/CardsGrid";
+import CustomSnackbar from "./components/CustomSnackbar";
+import WinnerBanner from "./components/WinnerBanner";
+import useStore from "./store/cardStore";
+import useFilteredCards from "./hooks/useFilteredCards";
 
-function App() {
+const App = () => {
+  const { showResult, isOpen } = useStore();
+  const filteredAndSortedCards = useFilteredCards();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ flexGrow: 1, minHeight: "100vh", background: "#f5f5f5" }}>
+      <HeaderBar />
+      <Container>
+        <AnimatePresence>{showResult && <WinnerBanner />}</AnimatePresence>
+        <FilterPanel />
+        <AnimatePresence>{isOpen && <JsonUploadPanel />}</AnimatePresence>
+
+        <SelectionStatus />
+        <CardsGrid cards={filteredAndSortedCards} />
+      </Container>
+      <CustomSnackbar />
+    </Box>
   );
-}
+};
 
 export default App;
